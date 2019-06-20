@@ -3,6 +3,39 @@
   margin: 0;
   padding: 0;
 }
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
+.carousel .carousel-items {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.carousel .carousel-items .carousel-item {
+  display: none;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.carousel .carousel-items .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.carousel .carousel-items .display-carousel-item {
+  display: block;
+}
+.carousel .carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.carousel .carousel-nav .buttons .navBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #931d25;
+  color: white;
+}
 .dropdown {
   z-index: 2;
   position: absolute;
@@ -131,16 +164,9 @@ body {
   width: 70%;
   margin: 45px auto;
   display: flex;
+  flex-direction: column;
   border: 1px solid #931d25;
   box-shadow: 1px 1px 5px #931d25;
   border-radius: 10px;
   overflow: hidden;
-}
-.section .box {
-  padding: 40px;
-}
-.section .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
 }

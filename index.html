@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="./CSS/index.css">
 	</head>
 	<body>
+		<script defer="defer" src="./components/Carousel/Carousel.js"></script>
 		<script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
 		<script defer="defer" src="./components/Tabs/Tabs.js"></script>
 		
@@ -23,14 +24,37 @@
 		</div>
 
 		<div class="section">
-			<div class="box">
+			<!-- <div class="box">
 				<div class="box-title">Box Title 1</div>
 				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
 			</div>
 			<div class="box">
 				<div class="box-title">Box Title 2</div>
 				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+			</div> -->
+			<div class="carousel">
+				<div class="carousel-items">
+					<div class="carousel-item display-carousel-item" data-image="1">
+						<img src="images/a-flatlay-view-of-a-minimalist-workspace.jpg" alt="a minimalist workstation">
+					</div>
+					<div class="carousel-item" data-image="2">
+						<img src="images/business-team-meeting-boardroom.jpg" alt="a team meeting">
+					</div>
+					<div class="carousel-item" data-image="3">
+						<img src="images/close-up-of-a-woman-s-hands-while-typing.jpg" alt="a woman typing">
+					</div>
+					<div class="carousel-item" data-image="4">
+						<img src="images/woman-edits-images-on-her-laptop.jpg" alt="a woman editing images">
+					</div>
+				</div>
+				<div class="carousel-nav">
+					<div class="buttons">
+						<button class="navBtn" id="prevBtn">Previous</button>
+						<button class="navBtn" id="nextBtn">Next</button>
+					</div>
+				</div>
 			</div>
+			
 		</div>
 
 		<div class="section">
