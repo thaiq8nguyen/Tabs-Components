@@ -33,6 +33,7 @@
     border-right: 1px solid white;
     color: @white;
     cursor: pointer;
+    transition: all 0.3s ease-in;
     &:hover {
       background-color: @lambda-light-red;
     }
@@ -45,6 +46,21 @@
     &:hover {
       background-color: @white;
     }
+    animation-name: animateFont;
+    animation-duration: 1s;
+  }
+
+}
+
+@keyframes animateFont {
+  0% {
+    font-size: 26px;
+  }
+  50% {
+    font-size: 28px;
+  }
+  50% {
+    font-size: 30px;
   }
 }
 

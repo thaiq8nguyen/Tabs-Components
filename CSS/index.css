@@ -83,6 +83,7 @@
   border-right: 1px solid white;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .tabs .tabs-link:hover {
   background-color: #be2530;
@@ -92,9 +93,22 @@
   border-right: 1px solid #931d25;
   background-color: #ffffff;
   color: black;
+  animation-name: animateFont;
+  animation-duration: 1s;
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+@keyframes animateFont {
+  0% {
+    font-size: 26px;
+  }
+  50% {
+    font-size: 28px;
+  }
+  50% {
+    font-size: 30px;
+  }
 }
 body {
   box-sizing: border-box;
