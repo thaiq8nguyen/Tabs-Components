@@ -27,22 +27,28 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  border: 2.5px solid #931d25;
+  cursor: pointer;
 }
 .dropdown .dropdown-link {
   width: 100%;
   text-align: center;
-  padding: 15px 0;
   font-size: 18px;
   text-decoration: none;
   color: #931d25;
+  height: 0px;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
 }
 .dropdown .dropdown-link:hover {
   color: #ffffff;
   background-color: #931d25;
 }
-.dropdown .dropdown-hidden {
-  display: none;
+.dropdown .dropdown-slide {
+  border: 2.5px solid #931d25;
+}
+.dropdown .dropdown-link-slide {
+  padding: 15px 0;
+  height: auto;
 }
 .tabs {
   width: 100%;

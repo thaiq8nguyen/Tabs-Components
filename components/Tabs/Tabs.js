@@ -1,4 +1,9 @@
 
+// class Tabs {
+//   constructor(linksElement) {
+    
+//   }
+// }
 class TabLink {
   constructor(element) {
     // Assign this.element to the passed in DOM element
