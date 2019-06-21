@@ -5,6 +5,7 @@ class Carousel {
         this.currentImage = document.querySelector(".carousel-item[data-image='1']");
         this.currentImageNum= this.currentImage.dataset.image;
         this.lastImage = this.items[this.items.length - 1];
+        this.firstImage =  this.items[0];
 
 
         this.carouselNav = this.element.querySelector(".carousel-nav");
@@ -24,47 +25,47 @@ class Carousel {
 
     previous() {
 
-        //let currentImageNum = this.currentItem.dataset.image;
         this.currentImage.classList.remove("current-carousel-item");
-
 
         if(this.currentImageNum > 1) {
 
             this.currentImageNum--;
-
-            this.currentImage = document.querySelector(`.carousel-item[data-image="${this.currentImageNum}"]`)
+            this.currentImage = document.querySelector(`.carousel-item[data-image="${this.currentImageNum}"]`);
 
 
         } else {
             
             this.currentImage = this.lastImage;
-            this.currentImageNum = this.currentImage.dataset.image
-        
-            console.log(this.currentImage);
+            this.currentImageNum = this.currentImage.dataset.image    
 
         }
 
         this.currentImage.classList.add("current-carousel-item");
 
-        console.log(this.currentImageNum)
-
     }
 
     next() {
 
+        this.currentImage.classList.remove("current-carousel-item");
+
+        if(this.currentImageNum < this.lastImage.dataset.image) {
+
+            this.currentImageNum++;
+            this.currentImage = document.querySelector(`.carousel-item[data-image="${this.currentImageNum}"]`);
+
+        } else {
+
+            this.currentImage = this.firstImage;
+            this.currentImageNum = this.currentImage.dataset.image 
+
+        }
+
+        this.currentImage.classList.add("current-carousel-item");
     }
 }
 
 const carousel =  document.querySelector(".carousel");
-const carouselApp = new Carousel(carousel);
+new Carousel(carousel);
 
-//console.log(carouselApp.displayItem);
 
-// const carouselItems = document.querySelectorAll(".carousel-item");
-// const carouselNav =  document.querySelector(".carousel-nav");
-
-// const previousBtn = carouselNav.querySelector("#prevBtn");
-// const nextBtn = carouselNav.querySelector("#nextBtn");
-
-//nextBtn.addEventListener()
  
