@@ -7,22 +7,22 @@
   display: flex;
   flex-direction: column;
 }
-.carousel .carousel-items {
+.carousel .items-container {
   display: flex;
   justify-content: center;
   margin: 30px 0;
 }
-.carousel .carousel-items .carousel-item {
+.carousel .items-container .carousel-item {
   display: none;
   width: 800px;
   height: 500px;
   text-align: center;
 }
-.carousel .carousel-items .carousel-item img {
+.carousel .items-container .carousel-item img {
   max-width: 100%;
   max-height: 100%;
 }
-.carousel .carousel-items .display-carousel-item {
+.carousel .items-container .current-carousel-item {
   display: block;
 }
 .carousel .carousel-nav {
@@ -35,6 +35,7 @@
   font-size: 18px;
   background-color: #931d25;
   color: white;
+  cursor: pointer;
 }
 .dropdown {
   z-index: 2;
