@@ -3,6 +3,40 @@
   margin: 0;
   padding: 0;
 }
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
+.carousel .items-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.carousel .items-container .carousel-item {
+  display: none;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.carousel .items-container .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.carousel .items-container .current-carousel-item {
+  display: block;
+}
+.carousel .carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.carousel .carousel-nav .buttons .navBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #931d25;
+  color: white;
+  cursor: pointer;
+}
 .dropdown {
   z-index: 2;
   position: absolute;
@@ -27,22 +61,28 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  border: 2.5px solid #931d25;
+  cursor: pointer;
 }
 .dropdown .dropdown-link {
   width: 100%;
   text-align: center;
-  padding: 15px 0;
   font-size: 18px;
   text-decoration: none;
   color: #931d25;
+  height: 0px;
+  overflow-y: hidden;
+  transition: all 0.4s ease;
 }
 .dropdown .dropdown-link:hover {
   color: #ffffff;
   background-color: #931d25;
 }
-.dropdown .dropdown-hidden {
-  display: none;
+.dropdown .dropdown-slide {
+  border: 2.5px solid #931d25;
+}
+.dropdown .dropdown-link-slide {
+  padding: 15px 0;
+  height: auto;
 }
 .tabs {
   width: 100%;
@@ -77,6 +117,7 @@
   border-right: 1px solid white;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .tabs .tabs-link:hover {
   background-color: #be2530;
@@ -86,9 +127,22 @@
   border-right: 1px solid #931d25;
   background-color: #ffffff;
   color: black;
+  animation-name: animateFont;
+  animation-duration: 1s;
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+@keyframes animateFont {
+  0% {
+    font-size: 26px;
+  }
+  50% {
+    font-size: 28px;
+  }
+  50% {
+    font-size: 30px;
+  }
 }
 body {
   box-sizing: border-box;
@@ -111,16 +165,9 @@ body {
   width: 70%;
   margin: 45px auto;
   display: flex;
+  flex-direction: column;
   border: 1px solid #931d25;
   box-shadow: 1px 1px 5px #931d25;
   border-radius: 10px;
   overflow: hidden;
-}
-.section .box {
-  padding: 40px;
-}
-.section .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
 }

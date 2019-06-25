@@ -21,23 +21,39 @@
     flex-direction: column;
     align-items: center;  
     margin-top: 10px;
-    border: 2.5px solid @lambda-red;
+    
+    
+    
+    cursor: pointer;
   }
   .dropdown-link {
     width: 100%;
     text-align: center;
-    padding: 15px 0;
+    //padding: 15px 0;
     font-size: 18px;
     text-decoration: none;
     color: @lambda-red;
+    height: 0px;
+    overflow-y: hidden;
+    transition: all .4s ease;
+    
+    
     &:hover {
       color: @white;
       background-color: @lambda-red;
     }
   }
-  .dropdown-hidden {
-    display: none;
+  .dropdown-slide {
+    border: 2.5px solid @lambda-red;
   }
+
+  .dropdown-link-slide {
+      padding: 15px 0;
+      height: auto;
+      
+  }
+  
+  
 }
 
 

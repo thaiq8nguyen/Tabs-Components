@@ -5,39 +5,68 @@
 		<link rel="stylesheet" href="./CSS/index.css">
 	</head>
 	<body>
+		<script defer="defer" src="./components/Carousel/Carousel.js"></script>
 		<script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
 		<script defer="defer" src="./components/Tabs/Tabs.js"></script>
 		
 		<div class="header-container">
 			<div class="dropdown">
 				<div class="dropdown-button">Dropdown</div>
-				<div class="dropdown-content dropdown-hidden">
+				<div class="dropdown-content">
 					<a class="dropdown-link" href="https://lambdaschool.com/" target="_blank">Lambda</a>
 					<a class="dropdown-link" href="https://www.google.com/" target="_blank">Google</a>
 					<a class="dropdown-link" href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+					<a class="dropdown-link" href="https://developer.mozilla.org/en-US/" target="_blank">Resources</a>
+					<a class="dropdown-link" href="https://developer.mozilla.org/en-US/" target="_blank">News</a>
 				</div>
 			</div>
 			<img src="./lambda_logo_light_small.png" class="header" />
 		</div>
 
 		<div class="section">
-			<div class="box">
+			<!-- <div class="box">
 				<div class="box-title">Box Title 1</div>
 				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
 			</div>
 			<div class="box">
 				<div class="box-title">Box Title 2</div>
 				<div class="box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+			</div> -->
+			<div class="carousel">
+				<div class="items-container">
+					<div class="carousel-item current-carousel-item" data-image="1">
+						<img src="images/a-flatlay-view-of-a-minimalist-workspace.jpg" alt="a minimalist workstation">
+					</div>
+					<div class="carousel-item" data-image="2">
+						<img src="images/business-team-meeting-boardroom.jpg" alt="a team meeting">
+					</div>
+					<div class="carousel-item" data-image="3">
+						<img src="images/close-up-of-a-woman-s-hands-while-typing.jpg" alt="a woman typing">
+					</div>
+					<div class="carousel-item" data-image="4">
+						<img src="images/woman-edits-images-on-her-laptop.jpg" alt="a woman editing images">
+					</div>
+				</div>
+				<div class="carousel-nav">
+					<div class="buttons">
+						<button class="navBtn" id="prevBtn">Previous</button>
+						<button class="navBtn" id="nextBtn">Next</button>
+					</div>
+				</div>
 			</div>
+			
 		</div>
 
 		<div class="section">
 				<div class="tabs">
 					<div class="tabs-links">
-						<div class="tabs-link tabs-link-selected" data-tab="1">Tab 1</div>
-						<div class="tabs-link" data-tab="2">Tab 2</div>
-						<div class="tabs-link" data-tab="3">Tab 3</div>
-						<div class="tabs-link" data-tab="4">Tab 4</div>
+						<div class="tabs-link tabs-link-selected" data-tab="1"><p>Tab 1</p></div>
+						<div class="tabs-link" data-tab="2"><p>Tab 2</p></div>
+						<div class="tabs-link" data-tab="3"><p>Tab 3</p></div>
+						<div class="tabs-link" data-tab="4"><p>Tab 4</p></div>
+						<div class="tabs-link" data-tab="5"><p>Events</p></div>
+						<div class="tabs-link" data-tab="6"><p>Projects</p></div>
+						<div class="tabs-link" data-tab="7"><p>Instructors</p></div>
 					</div>
 					<div class="tabs-items">
 						<div class="tabs-item tabs-item-selected" data-tab="1">
@@ -70,6 +99,30 @@
 								There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will
 								instantly disappear and be replaced by something even more bizarre and inexplicable. There is another theory which states
 								that this has already happened.
+							</div>
+						</div>
+						<div class="tabs-item" data-tab="5">
+							<div class="tabs-item-title">Upcoming Events</div>
+							<div class="tabs-item-description">
+								Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+								people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
+								nature of the Universe than we do now.
+							</div>
+						</div>
+						<div class="tabs-item" data-tab="6">
+							<div class="tabs-item-title">Upcoming Projects</div>
+							<div class="tabs-item-description">
+								Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+								people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
+								nature of the Universe than we do now.
+							</div>
+						</div>
+						<div class="tabs-item" data-tab="7">
+							<div class="tabs-item-title">Instructor News</div>
+							<div class="tabs-item-description">
+								Curiously enough, the only thing that went through the mind of the bowl of petunias as it fell was Oh no, not again. Many
+								people have speculated that if we knew exactly why the bowl of petunias had thought that we would know a lot more about the
+								nature of the Universe than we do now.
 							</div>
 						</div>
 					</div>
